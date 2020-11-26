@@ -2,14 +2,13 @@
 
 This module automatically creates a tile from the image associated with an entity when dropping it into the canvas.
 
-**Author**: Xurxo Diz Pico [Discord: xurxodiz#5885]
+**Author**: Xurxo Diz Pico (xurxodiz#5885)
 
 ## Installation
 
-Go to the module browser and paste this URL:
-https://github.com/xurxodiz/foundryvtt-entity-tiles/releases/latest/download/module.json
+Pending addition to the searchable list. In the meantime, install manually using the manifest URL:
 
-Pending addition to the searchable list.
+- https://github.com/xurxodiz/foundryvtt-entity-tiles/releases/download/latest/module.json
 
 ## Usage
 
