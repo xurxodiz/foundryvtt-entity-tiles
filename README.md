@@ -8,7 +8,7 @@ This module automatically creates a tile from the image associated with an entit
 
 Pending addition to the searchable list. In the meantime, install manually using the manifest URL:
 
-- https://github.com/xurxodiz/foundryvtt-entity-tiles/releases/download/latest/module.json
+- https://github.com/xurxodiz/foundryvtt-entity-tiles/releases/latest/download/module.json
 
 ## Usage
 
