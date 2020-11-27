@@ -2,7 +2,7 @@
   "name": "entity-tiles",
   "title": "Entity Tiles",
   "description": "Creates a tile from an entity image when shift-dropping them into the canvas.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "minimumCoreVersion": "0.7.7",
   "compatibleCoreVersion": "0.7.7",
   "author": "Xurxo Diz Pico (xurxodiz#5885)",

@@ -11,7 +11,9 @@ Hooks.once('ready', async function() {
 // Try to place a tile or fall back to default behaviour
 async function handleDrop(event) {
 
-    if (!event.shiftKey) {
+    // first check: the user pressed shift before clicking on the entity
+    // second check: the user pressed shift mid-drag
+    if (!(game.keyboard._downKeys.has('Shift') || event.shiftKey)) {
         // only act on shift-drop
         return canvas._onDrop(event);
     }
