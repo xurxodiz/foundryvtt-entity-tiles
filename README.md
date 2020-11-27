@@ -1,12 +1,12 @@
 # FoundryVTT Entity Tiles
 
-This module automatically creates a tile when pressing shift and drag-dropping an entity with an associated image (such as a journal entry, actor, item or rollable table) to the canvas, saving you the trouble of having to find that picture again through the file picker.
+This module automatically creates a tile when pressing shift and drag-dropping an entity with an associated image (such as a journal entry, actor, item, scene or rollable table) to the canvas, saving you the trouble of having to find that picture again through the file picker.
 
 **Author**: Xurxo Diz Pico (xurxodiz#5885)
 
 ## Installation
 
-Pending addition to the searchable list. In the meantime, install manually using the manifest URL:
+You can search for it in the module browser (recommended), or install manually using the manifest URL:
 
 - https://github.com/xurxodiz/foundryvtt-entity-tiles/releases/latest/download/module.json
 
