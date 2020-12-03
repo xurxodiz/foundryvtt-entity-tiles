@@ -6,15 +6,53 @@ Hooks.once('ready', async function() {
         } 
     })
     .bind($("#board")[0]);
+
+    game.settings.register("entity-tiles", "requiredKey", {
+        name: "EntityTiles.Settings.RequiredKey",
+        hint: "EntityTiles.Settings.RequiredKeyHint",
+        scope: "client",
+        config: true,
+        default: "shift",
+        type: String,
+        choices: {
+            "alt": "EntityTiles.Keys.Alt",
+            "meta": "EntityTiles.Keys.Meta",
+            "shift": "EntityTiles.Keys.Shift",
+            "control": "EntityTiles.Keys.Control"
+        }
+    });
 });
+
+function isTileIntended(event) {
+    switch (game.settings.get("entity-tiles", "requiredKey")) {
+        // first check: the user pressed the key before clicking on the entity
+        // second check: the user pressed the key mid-drag
+        case "alt":
+            return game.keyboard._downKeys.has('Alt') || event.altKey;
+            break;
+
+        case "meta":
+            return game.keyboard._downKeys.has('Meta') || event.metaKey;
+            break;
+
+        case "shift":
+            return game.keyboard._downKeys.has('Shift') || event.shiftKey;
+            break;
+
+        case "control":
+            return game.keyboard._downKeys.has('Control') || event.ctrlKey;
+            break;
+
+        default:
+            return false;
+            break;
+    }
+}
 
 // Try to place a tile or fall back to default behaviour
 async function handleDrop(event) {
 
-    // first check: the user pressed shift before clicking on the entity
-    // second check: the user pressed shift mid-drag
-    if (!(game.keyboard._downKeys.has('Shift') || event.shiftKey)) {
-        // only act on shift-drop
+    if (!isTileIntended(event)) {
         return canvas._onDrop(event);
     }
 

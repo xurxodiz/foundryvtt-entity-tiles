@@ -1,0 +1,8 @@
+{
+    "EntityTiles.Settings.RequiredKey": "Required key",
+    "EntityTiles.Settings.RequiredKeyHint": "This is the key that must be held pressed during drag for the entity to become a tile when dropped into the canvas.",
+    "EntityTiles.Keys.Shift": "Shift",
+    "EntityTiles.Keys.Control": "Control",
+    "EntityTiles.Keys.Alt": "Alt",
+    "EntityTiles.Keys.Meta": "Meta (Command/Windows)"
+}
