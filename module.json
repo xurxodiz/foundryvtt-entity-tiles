@@ -1,8 +1,8 @@
 {
   "name": "entity-tiles",
   "title": "Entity Tiles",
-  "description": "Creates a tile from an entity image when dropping them into the canvas while pressing alt (or whatever key you change it to in settings).",
-  "version": "0.1.1",
+  "description": "Creates a tile from an entity image when dropping them into the canvas while pressing alt.",
+  "version": "0.1.2",
   "minimumCoreVersion": "0.7.7",
   "compatibleCoreVersion": "0.7.7",
   "author": "Xurxo Diz Pico (xurxodiz#5885)",

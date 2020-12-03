@@ -10,34 +10,34 @@ You can search for it in the module browser (recommended), or install manually u
 
 ## Usage
 
-Drag and drop an entity to the canvas while pressing shift. If it has an image associated, a tile will be created from that image. The key itself can be changed in the module settings menu: `alt`, `meta`, `shift` and `control` are currently supported.
+Drag and drop an entity to the canvas while pressing shift. If it has an image associated, a tile will be created from that image. The key itself can be changed in the module settings menu: `Alt`, `Meta`, `Shift` and `Control` are currently supported.
 
 Dragging and dropping without pressing the key, or when an image is not associated with the entity, will carry on with the usual default behaviour expected.
 
-`Actors`, `items`, `journal entries`, `rollable tables` and `scenes` are currently supported.
+Actors, items, journal entries, rollable tables and scenes are currently supported.
 
 ## Known issues
 
-_Alt_ has no known issues in any platform or browser, that's why it's the default key and why I strongly recommended not changing it unless there's a clash with another module. If that's the case, though, I'd appreciate if you'd let me know in the issues or in Discord so I'm aware.
+`Alt` has no known issues in any platform or browser, that's why it's the default key and why I strongly recommended not changing it unless there's a clash with another module. If that's the case, though, I'd appreciate if you'd let me know in the issues or in Discord so I'm aware.
 
 ### macOS:
 
-Regardless of browser, _Control_ will bring up the contextual menu if you press it before you click to drag, so first click and drag, then press the key.
+Regardless of browser, `Control` will bring up the contextual menu if you press it before you click to drag, so first click and drag, then press the key.
 
 **Chrome**:
-- _Meta_ (_Command_) does not work
-- _Shift_ does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
+- `Meta` (`Command`) does not work
+- `Shift` does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
 
 ### Windows:
 
-Regardless of browser, _Meta_ (_Windows_) will also open the Start menu unless you disable it somehow.
+Regardless of browser, `Meta` (`Windows`) will also open the Start menu unless you disable it somehow.
 
 **Firefox**:
-- _Meta_ (_Windows_) does not work
+- `Meta` (`Windows`) does not work
 
 **Chrome, Edge**
-- _Meta_ (_Windows_) does not work if you press it while you drag, so first press it, then click and drag
-- _Shift_ does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
+- `Meta` (`Windows`) does not work if you press it while you drag, so first press it, then click and drag
+- `Shift` does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
 
 ## Acknowledgements
 
