@@ -1,6 +1,6 @@
 # FoundryVTT Entity Tiles
 
-This module automatically creates a tile when pressing a key (by default: shift) while drag-dropping an entity with an associated image (such as a journal entry, actor or item) to the canvas, therefore saving you the trouble of having to find that picture again through the file picker.
+This module automatically creates a tile when pressing a key (by default: alt) while drag-dropping an entity with an associated image (such as a journal entry, actor or item) to the canvas, therefore saving you the trouble of having to find that picture again through the file picker.
 
 ## Installation
 
