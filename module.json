@@ -2,7 +2,7 @@
   "name": "entity-tiles",
   "title": "Entity Tiles",
   "description": "Creates a tile from an entity image when dropping them into the canvas while pressing alt.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "minimumCoreVersion": "0.7.7",
   "compatibleCoreVersion": "0.7.7",
   "author": "Xurxo Diz Pico (xurxodiz#5885)",
@@ -16,6 +16,11 @@
     "lang": "en",
     "name": "English",
     "path": "lang/en.json"
+   },
+   {
+    "lang": "es",
+    "name": "Español",
+    "path": "lang/es.json"
    }],
   "url": "https://github.com/xurxodiz/foundryvtt-entity-tiles",
   "manifest": "https://github.com/xurxodiz/foundryvtt-entity-tiles/releases/latest/download/module.json",

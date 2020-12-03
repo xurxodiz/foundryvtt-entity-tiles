@@ -1,0 +1,8 @@
+{
+    "EntityTiles.Settings.RequiredKey": "Tecla requerida",
+    "EntityTiles.Settings.RequiredKeyHint": "Esta es la tecla que debes mantener pulsada mientras arrastras para que la entidad se convierta en una baldosa cuando la sueltas en el lienzo.",
+    "EntityTiles.Keys.Shift": "Mayúsculas",
+    "EntityTiles.Keys.Control": "Control",
+    "EntityTiles.Keys.Alt": "Alt",
+    "EntityTiles.Keys.Meta": "Meta (Comando/Windows)"
+}
