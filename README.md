@@ -2,8 +2,6 @@
 
 This module automatically creates a tile when pressing a key (by default: shift) while drag-dropping an entity with an associated image (such as a journal entry, actor or item) to the canvas, therefore saving you the trouble of having to find that picture again through the file picker.
 
-**Author**: Xurxo Diz Pico (xurxodiz#5885)
-
 ## Installation
 
 You can search for it in the module browser (recommended), or install manually using the manifest URL:
@@ -16,37 +14,41 @@ Drag and drop an entity to the canvas while pressing shift. If it has an image a
 
 Dragging and dropping without pressing the key, or when an image is not associated with the entity, will carry on with the usual default behaviour expected.
 
-Entities currently supported:
-- Actors
-- Items
-- Journal entries
-- Rollable tables
-- Scenes
+`Actors`, `items`, `journal entries`, `rollable tables` and `scenes` are currently supported.
 
-### Compatibility
+## Known issues
 
-**Firefox macOS**:
-- _Control_ brings up the contextual menu if you press it before you click to drag, so first click and drag, then press the key
-- Any other key works fine regardless of when you press the key
+_Alt_ has no known issues in any platform or browser, that's why it's the default key and why I strongly recommended not changing it unless there's a clash with another module. If that's the case, though, I'd appreciate if you'd let me know in the issues or in Discord so I'm aware.
 
-**Chrome macOS**:
-- _Meta_ does not work
-- _Control_ brings up the contextual menu if you press it before you click to drag, so first click and drag, then press the key
-- _Shift_ is not registered properly if you press it before you click to drag, so first click and drag, then press the key
-- _Alt_ works fine regardless of when you press the key
+### macOS:
 
-**Safari macOS**:
-- Known to be wholly incompatible with FoundryVTT
+Regardless of browser, _Control_ will bring up the contextual menu if you press it before you click to drag, so first click and drag, then press the key.
 
-Reports of compatibility in other platforms are much appreciated! (you can open up an issue to let me know, or reach me in Discord)
+**Chrome**:
+- _Meta_ (_Command_) does not work
+- _Shift_ does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
+
+### Windows:
+
+Regardless of browser, _Meta_ (_Windows_) will also open the Start menu unless you disable it somehow.
+
+**Firefox**:
+- _Meta_ (_Windows_) does not work
+
+**Chrome, Edge**
+- _Meta_ (_Windows_) does not work if you press it while you drag, so first press it, then click and drag
+- _Shift_ does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
 
 ## Acknowledgements
 
 Born trying to update [ImageDrop](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/), from which only the tile creation code remains.
 Hooks and drag-drop code based on [FateX](https://github.com/anvil-vtt/FateX) and [DragUpload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload).
 
+### Contributors
+
+- Xurxo Diz Pico (xurxodiz#5885)
+
 ### License
 
 The content in this repository is covered by a [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
 (do what you want with it as long as you add a line saying where you got it from.)
-

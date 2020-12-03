@@ -12,7 +12,7 @@ Hooks.once('ready', async function() {
         hint: "EntityTiles.Settings.RequiredKeyHint",
         scope: "client",
         config: true,
-        default: "shift",
+        default: "alt",
         type: String,
         choices: {
             "alt": "EntityTiles.Keys.Alt",
