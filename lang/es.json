@@ -1,4 +1,8 @@
 {
+    "EntityTiles.Settings.HiddenByDefault": "¿Colocar las baldosas ocultas?",
+    "EntityTiles.Settings.LockedByDefault": "¿Colocar las baldosas bloquedas?",
+    "EntityTiles.Settings.MaxHeight": "Máxima altura de baldosa en px (se reescalará)",
+    "EntityTiles.Settings.MaxWidth": "Máximo ancho de baldosa en px (se reescalará)",
     "EntityTiles.Settings.RequiredKey": "Tecla requerida",
     "EntityTiles.Settings.RequiredKeyHint": "Esta es la tecla que debes mantener pulsada mientras arrastras para que la entidad se convierta en una baldosa cuando la sueltas en el lienzo.",
     "EntityTiles.Keys.Shift": "Mayúsculas",
@@ -6,3 +10,4 @@
     "EntityTiles.Keys.Alt": "Alt",
     "EntityTiles.Keys.Meta": "Meta (Comando/Windows)"
 }
+

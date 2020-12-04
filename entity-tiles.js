@@ -21,6 +21,38 @@ Hooks.once('ready', async function() {
             "control": "EntityTiles.Keys.Control"
         }
     });
+
+    game.settings.register("entity-tiles", "hiddenByDefault", {
+        name: "EntityTiles.Settings.HiddenByDefault",
+        scope: "client",
+        config: true,
+        default: false,
+        type: Boolean
+    });
+
+    game.settings.register("entity-tiles", "lockedByDefault", {
+        name: "EntityTiles.Settings.LockedByDefault",
+        scope: "client",
+        config: true,
+        default: false,
+        type: Boolean
+    });
+
+    game.settings.register("entity-tiles", "maxWidth", {
+        name: "EntityTiles.Settings.MaxWidth",
+        scope: "client",
+        config: true,
+        default: 1000,
+        type: Number
+    });
+
+        game.settings.register("entity-tiles", "maxHeight", {
+        name: "EntityTiles.Settings.MaxHeight",
+        scope: "client",
+        config: true,
+        default: 1000,
+        type: Number
+    });
 });
 
 function isTileIntended(event) {
@@ -100,11 +132,34 @@ async function handleDrop(event) {
 
 // Create the tile
 async function _placeEntityImageTile(event, imgSrc) {
+
+    let maxWidth = game.settings.get("entity-tiles", "maxWidth");
+    let maxHeight = game.settings.get("entity-tiles", "maxHeight");
+
     const tex = await loadTexture(imgSrc);
+    let texWidth = tex.width;
+    let texHeight = tex.height;
+
+    // first we scale down if needed based on width
+    if (texWidth > maxWidth) {
+        let widthFactor = maxWidth / texWidth;
+        texHeight = Math.round(texHeight * widthFactor);
+        texWidth = maxWidth;
+    }
+
+    // then, if still necessary, based on height
+    if (texHeight > maxHeight) {
+        let heightFactor = maxHeight / texHeight;
+        texWidth = Math.round(texWidth * heightFactor);
+        texHeight = maxHeight;
+    }
+
     let tileData = {
         img: imgSrc,
-        width: tex.width,
-        height: tex.height
+        width: texWidth,
+        height: texHeight,
+        hidden: game.settings.get("entity-tiles", "hiddenByDefault"),
+        locked: game.settings.get("entity-tiles", "lockedByDefault")
     };
     let t = canvas.tiles.worldTransform;
     tileData.x = (event.clientX - t.tx) / canvas.stage.scale.x,
