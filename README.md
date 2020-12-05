@@ -10,7 +10,7 @@ You can search for it in the module browser (recommended), or install manually u
 
 ## Usage
 
-Drag and drop an entity to the canvas while pressing shift. If it has an image associated, a tile will be created from that image. The key itself can be changed in the module settings menu: `Alt`, `Meta`, `Shift` and `Control` are currently supported.
+Drag and drop an entity to the canvas while pressing `Alt`. If it has an image associated, a tile will be created from that image. The key itself can be changed in the module settings menu: `Alt`, `Meta`, `Shift` and `Control` are currently supported.
 
 Dragging and dropping without pressing the key, or when an image is not associated with the entity, will carry on with the usual default behaviour expected.
 
@@ -25,18 +25,18 @@ Actors, items, journal entries, rollable tables and scenes are currently support
 Regardless of browser, `Control` will bring up the contextual menu if you press it before you click to drag, so first click and drag, then press the key.
 
 **Chrome**:
-- `Meta` (`Command`) does not work
+- `Meta (Command)` does not work
 - `Shift` does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
 
 ### Windows:
 
-Regardless of browser, `Meta` (`Windows`) will also open the Start menu unless you disable it somehow.
+Regardless of browser, `Meta (Windows)` will also open the Start menu unless you disable it somehow.
 
 **Firefox**:
-- `Meta` (`Windows`) does not work
+- `Meta (Windows)` does not work
 
 **Chrome, Edge**
-- `Meta` (`Windows`) does not work if you press it while you drag, so first press it, then click and drag
+- `Meta (Windows)` does not work if you press it while you drag, so first press it, then click and drag
 - `Shift` does not work if you press it before you click to drag, so first click and drag, then press the key before dropping
 
 ## Acknowledgements
