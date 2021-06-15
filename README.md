@@ -46,7 +46,7 @@ Hooks and drag-drop code based on [FateX](https://github.com/anvil-vtt/FateX) an
 
 ### Contributors
 
-- Xurxo Diz Pico (xurxodiz#5885)
+- Jorge Diz Pico (xurxodiz#5885)
 
 ### License
 

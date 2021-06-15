@@ -161,8 +161,8 @@ async function _placeEntityImageTile(event, imgSrc) {
         hidden: game.settings.get("entity-tiles", "hiddenByDefault"),
         locked: game.settings.get("entity-tiles", "lockedByDefault")
     };
-    let t = canvas.tiles.worldTransform;
+    let t = canvas.foreground.worldTransform;
     tileData.x = (event.clientX - t.tx) / canvas.stage.scale.x,
     tileData.y = (event.clientY - t.ty) / canvas.stage.scale.y,
-    Tile.create(tileData);
+    canvas.scene.createEmbeddedDocuments("Tile", [tileData]);
 }
