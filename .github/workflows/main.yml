@@ -22,7 +22,7 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%m')"
 
       - name: Create installable system zip file
-        run: zip -r entity-tiles.zip module.json entity-tiles.js
+        run: zip -r entity-tiles.zip module.json entity-tiles.js lang
 
       - name: Create release
         id: create_versioned_release

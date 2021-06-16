@@ -43,6 +43,7 @@ Regardless of browser, `Meta (Windows)` will also open the Start menu unless you
 
 Born trying to update [ImageDrop](https://gitlab.com/mesfoliesludiques/foundryvtt-image-drop/), from which only the tile creation code remains.
 Hooks and drag-drop code based on [FateX](https://github.com/anvil-vtt/FateX) and [DragUpload](https://github.com/cswendrowski/FoundryVTT-Drag-Upload).
+Big special thanks to the [FoundryVTT en Español](https://discord.gg/MHCerwd) community for their continued support, suggestions and help.
 
 ### Contributors
 
