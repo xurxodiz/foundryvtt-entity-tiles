@@ -18,7 +18,7 @@ Actors, items, journal entries, rollable tables and scenes are currently support
 
 ## Known issues
 
-`Alt` has no known issues in any platform or browser, that's why it's the default key and why I strongly recommended not changing it unless there's a clash with another module. If that's the case, though, I'd appreciate if you'd let me know in the issues or in Discord so I'm aware.
+`Alt` has no known issues in any platform or browser, that's why it's the default key—but it does conflict with core behaviour as it's the key for dropping hidden actors. If you miss that functionality you can change it to any of the other possible keys, just be aware of the possible issues listed below and take your pick!
 
 ### macOS:
 
